@@ -31,6 +31,7 @@
     --text-color: #333;
     --brand-green-color: #0a775f;
     --brand-burlywood-color: #c99b67;
+    --black-color: #000;
 }
 
 /* GLOBAL STYLES */
@@ -73,6 +74,21 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+/* BUTTON STYLES */
+.site-btn {
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 16px 24px;
+    border-radius: 100px;
+    display: inline-block;
+    text-decoration: none;
+}
+.green-btn {
+    background-color: var(--brand-green-color);
+    color: #fff;
+}
 
 
 /* HEADER AND HERO SECTION STYLES */
@@ -81,6 +97,8 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* SITE HEADER STYLES */
 .header {
     padding: 40px 0;
 }
@@ -116,6 +134,47 @@ img {
     color: var(--text-color);
 }
 
+/* HERO SECTION STYLES */
+.hero {
+
+}
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.hero-content {
+    width: 464px;
+    margin: 116px 50px 100px 150px;
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--black-color);
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.hero-text {
+    line-height: 24px;
+    color: var(--black-color);
+    margin-bottom: 34px;
+}
+.hero-img-wrapper {
+    position: relative;
+}
+.hero-round-img {
+    width: 214px;
+    height: 214px;
+    position: absolute;
+    top: -81px;
+    left: -92px;
+}
+.hero-img {
+    width: 710px;
+    height: 696px;
+    object-fit: cover;
+}
 
 
 
