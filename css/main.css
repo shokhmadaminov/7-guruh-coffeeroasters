@@ -135,9 +135,6 @@ img {
 }
 
 /* HERO SECTION STYLES */
-.hero {
-
-}
 .hero-container {
     display: flex;
     justify-content: space-between;
@@ -174,6 +171,7 @@ img {
     width: 710px;
     height: 696px;
     object-fit: cover;
+    display: block;
 }
 
 
