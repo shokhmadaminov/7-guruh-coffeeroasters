@@ -175,6 +175,104 @@ img {
 }
 
 
+/* MAIN SECTION STYLES */
+.main {
+    flex-grow: 1;
+}
+
+/* OUR COLLECTION STYLES */
+.our-collection {
+    padding: 20px;
+    overflow-x: hidden;
+}
+.our-collection-container {
+    max-width: 1400px;
+    padding: 50px 0;
+    background-image: url("../images/our-collection-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.our-collection-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.our-collection-list {
+    width: 100%;
+    max-width: 1114px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.our-collection-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.our-collection-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.our-collection-item:nth-child(odd) .our-collection-item-text-wrapper {
+    padding-left: 117px;
+    padding-right: 117px;
+}
+.our-collection-item:nth-child(even) .our-collection-item-text-wrapper {
+    padding-left: 117px;
+    padding-right: 117px;
+}
+.our-collection-item-img {
+    width: 450px;
+    height: 375px;
+    object-fit: cover;
+}
+.our-collection-item-title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.our-collection-item-text {
+    font-size: 22px;
+    line-height: 34px;
+}
+.left-leaf {
+    width: 402px;
+    height: 300px;
+    position: absolute;
+    top: 40px;
+    left: -168px;
+}
+.left-light-leaf {
+    width: 316px;
+    height: 269px;
+    position: absolute;
+    bottom: 170px;
+    left: -206px;
+}
+.right-leaf {
+    width: 392px;
+    height: 477px;
+    position: absolute;
+    bottom: 462px;
+    right: -228px;
+    z-index: 2;
+}
+.right-light-leaf {
+    width: 253px;
+    height: 215px;
+    position: absolute;
+    bottom: 575px;
+    right: -170px;
+    z-index: 1;
+}
+
 
 
 
@@ -195,5 +293,8 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
     .header-and-hero-wrapper {
         background-image: url("../images/hero-header-bg-img@2x.jpg");
+    }
+    .our-collection-container {
+        background-image: url("../images/our-collection-bg@2x.jpg");
     }
 }
