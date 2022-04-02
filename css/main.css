@@ -93,6 +93,7 @@ img {
 
 /* HEADER AND HERO SECTION STYLES */
 .header-and-hero-wrapper {
+    background-color: rgb(248, 218, 178);
     background-image: url("../images/hero-header-bg-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,6 +179,7 @@ img {
 /* MAIN SECTION STYLES */
 .main {
     flex-grow: 1;
+    padding-bottom: 50px;
 }
 
 /* OUR COLLECTION STYLES */
@@ -188,6 +190,7 @@ img {
 .our-collection-container {
     max-width: 1400px;
     padding: 50px 0;
+    background-color: #dddddd;
     background-image: url("../images/our-collection-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -273,6 +276,156 @@ img {
     z-index: 1;
 }
 
+/* INDEX FEATURES STYLES */
+.index-features-inner {
+    background: linear-gradient(var(--brand-burlywood-color) 100%, #fff 100%);
+    background-image: url("../images/index-features-bgi.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    padding: 50px 30px 80px 30px;
+    text-align: center;
+}
+.index-features-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.index-features-text {
+    width: 581px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+.index-features-list {
+    list-style: none;
+    display: flex;
+    margin-right: -20px;
+    position: relative;
+}
+.index-features-word-icon {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+.index-features-item {
+    width: 100%;
+    max-width: 433px;
+    margin-right: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.index-features-item-img {
+    width: 433px;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 28px;
+}
+.index-features-item-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.index-features-item-text {
+    font-size: 18px;
+    padding-right: 56px;
+    margin-top: auto;
+}
+
+/* PROCESS SECTION STYLES */
+.process-inner {
+    background-color: var(--brand-green-color);
+    background-image: url("../images/process-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 30px;
+    text-align: center;
+    position: relative;
+}
+.process-ball-icon {
+    position: absolute;
+    top: 41px;
+    right: 68px;
+}
+.process-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+.process-box-list {
+    width: 100%;
+    max-width: 966px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+    margin-bottom: 20px;
+}
+.process-box-hr {
+    width: 100%;
+    max-width: 899px;
+    border: dashed 3px var(--brand-burlywood-color);
+    border-bottom: none;
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    z-index: 1;
+}
+.process-box-item {
+    width: 60px;
+    height: 60px;
+    border: solid 4px var(--brand-burlywood-color);
+    background-color: #f8f8f2;
+    position: relative;
+    z-index: 2;
+}
+.process-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 60px;
+}
+.process-item {
+    width: 433px;
+    padding: 20px 20px 40px;
+    background-color: #f8f8f2;
+    text-align: left;
+}
+.process-item-number {
+    text-align: right;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 45px;
+}
+.process-item-title {
+    width: 245px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+.process-item-text {
+    font-size: 18px;
+    padding-right: 8px;
+}
+.burlywood-btn {
+    background-color: var(--brand-burlywood-color);
+    color: #fff;
+}
+
 
 
 
@@ -296,5 +449,11 @@ only screen and (                min-resolution: 2dppx) {
     }
     .our-collection-container {
         background-image: url("../images/our-collection-bg@2x.jpg");
+    }
+    .index-features-inner {
+        background-image: url("../images/index-features-bgi@2x.jpg");
+    }
+    .process-inner {
+        background-image: url("../images/process-bg@2x.jpg");
     }
 }
