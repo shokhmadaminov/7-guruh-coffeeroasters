@@ -30,7 +30,11 @@
 :root {
     --text-color: #333;
     --brand-green-color: #0a775f;
+    --brand-green-hover-color: rgb(10, 119, 95, 0.8);
+    --brand-green-active-color: rgb(10, 119, 95, 0.6);
     --brand-burlywood-color: #c99b67;
+    --brand-burlywood-hover-color: rgb(201, 155, 103, 0.8);
+    --brand-burlywood-active-color: rgb(201, 155, 103, 0.6);
     --black-color: #000;
 }
 
@@ -89,6 +93,22 @@ img {
     background-color: var(--brand-green-color);
     color: #fff;
 }
+.green-btn:hover {
+    background-color: var(--brand-green-hover-color);
+}
+.green-btn:active {
+    background-color: var(--brand-green-active-color);
+}
+.burlywood-btn {
+    background-color: var(--brand-burlywood-color);
+    color: #fff;
+}
+.burlywood-btn:hover {
+    background-color: var(--brand-burlywood-hover-color);
+}
+.burlywood-btn:active {
+    background-color: var(--brand-burlywood-active-color);
+}
 
 
 /* HEADER AND HERO SECTION STYLES */
@@ -112,6 +132,12 @@ img {
 .header-logo-link {
     display: flex;
 }
+.header-logo-link:hover {
+    opacity: 0.8;
+}
+.header-logo-link:active {
+    opacity: 0.6;
+}
 .header-logo-img {
     width: 235px;
     height: 24px;
@@ -133,6 +159,12 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--text-color);
+}
+.sitenav-item-link:hover {
+    color: var(--brand-green-color);
+}
+.sitenav-item-link:active {
+    opacity: 0.6;
 }
 
 /* HERO SECTION STYLES */
@@ -348,6 +380,9 @@ img {
     text-align: center;
     position: relative;
 }
+.process-inner *:focus {
+    --brand-green-color: var(--brand-burlywood-color);
+}
 .process-ball-icon {
     position: absolute;
     top: 41px;
@@ -421,10 +456,6 @@ img {
     font-size: 18px;
     padding-right: 8px;
 }
-.burlywood-btn {
-    background-color: var(--brand-burlywood-color);
-    color: #fff;
-}
 
 
 /* SITE FOOTER STYLES */
@@ -450,6 +481,12 @@ img {
 }
 .site-footer-social-media-item-link {
     display: flex;
+}
+.site-footer-social-media-item-link:hover {
+    opacity: 0.8;
+}
+.site-footer-social-media-item-link:active {
+    opacity: 0.6;
 }
 .site-footer-social-media-item-link img {
     display: block;
